@@ -1,4 +1,23 @@
 .container {
   display: flex;
   justify-content: center;
+  padding: 8px 6px;
+  gap: 10px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.0001);
+  box-shadow: inset 0px -1px 0px rgba(217, 217, 217, 0.498039), inset 0px 1px 0px rgba(217, 217, 217, 0.498039);
+}
+
+.logo {
+  height: 20px;
+}
+
+.signIt {
+  background-color: #F7941D;
+  padding: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
 }

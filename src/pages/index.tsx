@@ -1,11 +1,5 @@
 import Head from 'next/head'
-import { Merriweather } from 'next/font/google'
 import { Home } from 'components/templates/home/home'
-
-const merriweather = Merriweather({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-})
 
 export default function HomePage() {
   return (
@@ -17,7 +11,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={merriweather.className} style={{ minHeight: '100vh' }}>
+      <main style={{ minHeight: '100vh' }}>
         <Home />
       </main>
     </>

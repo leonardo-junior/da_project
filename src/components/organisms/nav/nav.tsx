@@ -1,20 +1,16 @@
 import { Hamburger } from 'components/atoms/hamburger/hamburger'
-import styles from './nav.module.scss'
-import { Roboto } from 'next/font/google'
+import { roboto } from 'components/atoms/fonts/fonts'
 
-const roboto = Roboto({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-})
+import styles from './nav.module.scss'
 
 export const Nav = () => {
   return (
     <div className={styles.container}>
       <Hamburger />
 
-      <img src="/logo-estado-de-minas.svg" className={styles.logo} />
+      <img src="/logo-estado-de-minas.svg" alt="Logo jornal Estado de Minas" className={styles.logo} />
 
-      <div className={`${styles.signIt} ${roboto.className}`}>Assine</div>
+      <button className={`${styles.signIt} ${roboto.className}`}>Assine</button>
     </div>
   )
 }

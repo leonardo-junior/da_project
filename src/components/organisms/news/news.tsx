@@ -5,6 +5,7 @@ import { Ad2 } from 'components/molecules/ads/ad2/ad2'
 import { FeaturedNewsHeader } from 'components/molecules/featuredNewsHeader/featuredNewsHeader'
 import { FeaturedNews } from 'components/molecules/featuredNews/featuredNews'
 import { Article } from 'components/molecules/article/article'
+import { ReadMore } from 'components/molecules/readMore/readMore'
 
 export const News = () => {
   const news1 = {
@@ -26,6 +27,8 @@ export const News = () => {
       <Article title={news1.title} text={news1.text} />
 
       <Ad2 />
+
+      <ReadMore />
 
       <Article title={news2.title} text={news2.text} />
 

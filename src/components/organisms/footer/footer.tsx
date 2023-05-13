@@ -1,6 +1,7 @@
 import { SocialMedias } from 'components/molecules/socialMedias/socialMedias'
 import styles from './footer.module.scss'
 import { roboto } from 'components/atoms/fonts/fonts'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -15,7 +16,7 @@ export const Footer = () => {
         <button>LEIA 100 COMENTÁRIOS</button>
 
         <p>
-          * Para comentar, faça seu <span>login</span> ou <span>assine</span>
+          * Para comentar, faça seu <Link href="/">login</Link> ou <Link href="/">assine</Link>
         </p>
       </div>
     </footer>

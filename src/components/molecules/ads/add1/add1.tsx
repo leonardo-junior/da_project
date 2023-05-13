@@ -1,7 +1,7 @@
 import { roboto } from 'components/atoms/fonts/fonts'
-import styles from './publicity1.module.scss'
+import styles from './add1.module.scss'
 
-export const Publicity1 = () => {
+export const Add1 = () => {
   return (
     <aside className={styles.container}>
       <span className={roboto.className}>Publicidade</span>

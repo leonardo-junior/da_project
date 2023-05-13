@@ -3,15 +3,31 @@ import { SocialMedias } from '../socialMedias/socialMedias'
 import styles from './featuredNews.module.scss'
 
 export const FeaturedNews = () => {
+  const isColumnist = true
+
   return (
     <div className={styles.container}>
       <div className={styles.columnist}>
         <div className={styles.columnistInfo}>
-          <h3 className={roboto.className}>Tamaki Ryushi</h3>
+          {isColumnist && (
+            <img className={styles.columnistImage} src="/columnistImage.svg" alt="Foto colunista" />
+          )}
 
-          <div className={styles.postDate}>
-            <img src="/clock.svg" alt="Icone relógio" />
-            <span className={roboto.className}>02/02/2021 08:22</span>
+          <div>
+            {isColumnist ? (
+              <div className={styles.columnistMode}>
+                <span className={roboto.className}>Colunista</span>
+
+                <h3 className={roboto.className}>Tamaki Ryushi</h3>
+              </div>
+            ) : (
+              <h3 className={roboto.className}>Tamaki Ryushi</h3>
+            )}
+
+            <div className={styles.postDate}>
+              <img src="/clock.svg" alt="Icone relógio" />
+              <span className={roboto.className}>02/02/2021 08:22</span>
+            </div>
           </div>
         </div>
 

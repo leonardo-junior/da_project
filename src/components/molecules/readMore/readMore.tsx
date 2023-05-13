@@ -28,7 +28,7 @@ export const ReadMore = () => {
       <span className={styles.line} />
 
       <div className={styles.content}>
-        <h2>Leia mais</h2>
+        <h2 className={merriweather.className}>Leia mais</h2>
 
         <div className={styles.news}>
           {readMore.map((read) => {

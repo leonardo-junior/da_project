@@ -24,11 +24,11 @@ export const News = () => {
 
       <FeaturedNews />
 
+      <ReadMore />
+
       <Article title={news1.title} text={news1.text} />
 
       <Ad2 />
-
-      <ReadMore />
 
       <Article title={news2.title} text={news2.text} />
 

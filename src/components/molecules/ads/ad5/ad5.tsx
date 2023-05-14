@@ -1,6 +1,7 @@
 import { roboto } from 'components/atoms/fonts/fonts'
 import styles from './ad5.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Ad5 = () => {
   return (
@@ -9,7 +10,7 @@ export const Ad5 = () => {
         <ins className={styles.container} aria-label="Anúncio" role="complementary">
           <span className={roboto.className}>Publicidade</span>
 
-          <img src="/ads/ad5.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+          <Image width={300} height={600} src="/ads/ad5.svg" alt="Anúncio" aria-label="Anúncio de produto" />
         </ins>
       </Link>
     </nav>

@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 0 10px;
   gap: 5px;
+  width: 100%;
   max-width: 766px;
 
   > span {
@@ -37,6 +38,7 @@
   }
 
   @media screen and (min-width: 1365px) {
-    max-width: 1107px; 
+    max-width: 1107px;
+    padding: 0;
   }
 }

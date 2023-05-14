@@ -1,6 +1,10 @@
 .container {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1365px) {
+    display: none;
+  }
 }
 
 .content {
@@ -23,9 +27,5 @@
     letter-spacing: 0px;
     text-align: left;
     color: #191919;
-  }
-
-  @media screen and (min-width: 1365px) {
-    display: none;
   }
 }

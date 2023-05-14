@@ -3,10 +3,10 @@ import styles from './ad3.module.scss'
 
 export const Ad3 = () => {
   return (
-    <aside className={styles.container}>
+    <ins className={styles.container} aria-label="Anúncio" role="complementary">
       <span className={roboto.className}>Publicidade</span>
 
-      <img src="/ad3.svg" alt="Publicidade" />
-    </aside>
+      <img src="/ad3.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+    </ins>
   )
 }

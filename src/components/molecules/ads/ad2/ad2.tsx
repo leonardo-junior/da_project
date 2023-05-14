@@ -2,10 +2,10 @@ import styles from './ad2.module.scss'
 
 export const Ad2 = () => {
   return (
-    <aside className={styles.container}>
-      <img src="/ad2.svg" alt="Publicidade" />
+    <ins className={styles.container} aria-label="Anúncio" role="complementary">
+      <img src="/ad2.svg" alt="Anúncio" aria-label="Anúncio de produto" />
 
-      <img src="/ad6.svg" alt="Publicidade" />
-    </aside>
+      <img src="/ad6.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+    </ins>
   )
 }

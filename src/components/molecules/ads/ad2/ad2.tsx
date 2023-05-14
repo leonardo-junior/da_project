@@ -6,9 +6,9 @@ export const Ad2 = () => {
     <nav>
       <Link href="/" aria-label="Direciona produto do anunciante">
         <ins className={styles.container} aria-label="Anúncio" role="complementary">
-          <img src="/ads/ad2.png" alt="Anúncio" aria-label="Anúncio de produto" />
+          <img src="/ads/ad2.svg" alt="Anúncio" aria-label="Anúncio de produto" />
 
-          <img src="/ads/ad6.png" alt="Anúncio" aria-label="Anúncio de produto" />
+          <img src="/ads/ad6.svg" alt="Anúncio" aria-label="Anúncio de produto" />
         </ins>
       </Link>
     </nav>

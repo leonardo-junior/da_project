@@ -33,7 +33,11 @@ export const FeaturedNews = () => {
         </div>
 
         <div className={styles.socialMedia}>
-          <SocialMedias />
+          <div>
+            <span className={roboto.className}>Compartilhe</span>
+
+            <SocialMedias />
+          </div>
 
           <button className={roboto.className}>
             Siga no <img src="/google-news.svg" alt="Google news" />

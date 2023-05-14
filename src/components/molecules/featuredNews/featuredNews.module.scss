@@ -183,6 +183,20 @@
   }
 }
 
+.mobileImage {
+  @media screen and (min-width: 1365px) {
+    display: none;
+  }
+}
+
+.desktopImage {
+  display: none;
+
+  @media screen and (min-width: 1365px) {
+    display: block;
+  }
+}
+
 .audio {
   display: flex;
   align-items: center;

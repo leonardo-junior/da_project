@@ -9,7 +9,7 @@ export const Ad1 = () => {
         <ins className={styles.content} aria-label="Anúncio" role="complementary">
           <span className={roboto.className}>Publicidade</span>
 
-          <img src="/ad1.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+          <img src="/ads/ad1.png" alt="Anúncio" aria-label="Anúncio de produto" />
         </ins>
       </Link>
     </nav>

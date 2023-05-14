@@ -49,7 +49,8 @@ export const FeaturedNews = () => {
       </section>
 
       <figure className={styles.header}>
-        <img src="/featuredNews.svg" alt="Imagem do filme Bacurau" />
+        <img className={styles.mobileImage} src="/bacurau-mobile.png" alt="Imagem do filme Bacurau" />
+        <img className={styles.desktopImage} src="/bacurau-desktop.png" alt="Imagem do filme Bacurau" />
 
         <figcaption>
           <img src="/camera.svg" alt="Imagem câmera" />

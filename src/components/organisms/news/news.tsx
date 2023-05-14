@@ -24,7 +24,7 @@ export const News = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <FeaturedNewsHeader />
 
       <Ad3 />
@@ -56,6 +56,6 @@ export const News = () => {
           <Ad5 />
         </aside>
       </div>
-    </div>
+    </main>
   )
 }

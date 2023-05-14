@@ -33,14 +33,14 @@
   justify-content: center;
   align-items: center;
 
-  > p {
+  > span {
     display: none;
   }
 
   @media screen and (min-width: 1365px) {
     justify-content: flex-start;
 
-    > p {
+    > span {
       display: block;
       font-size: 26px;
       font-weight: 400;
@@ -56,8 +56,8 @@
   display: none;
 
   @media screen and (min-width: 1365px) {
-    display: block;
-    padding: 10px;
+    display: flex;
+    padding: 12px;
     border: 1px solid #ECECEC;
     background-color: #FAFAFA;
     border-radius: 4px;

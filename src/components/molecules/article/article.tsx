@@ -8,10 +8,10 @@ type ArticleProps = {
 
 export const Article = ({ title, text }: ArticleProps) => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h2 className={merriweather.className}>{title}</h2>
 
       <p className={merriweather.className}>{text}</p>
-    </div>
+    </article>
   )
 }

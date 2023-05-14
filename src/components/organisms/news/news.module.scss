@@ -7,6 +7,10 @@
   flex:1;
 
   @media screen and (min-width: 767px) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 1365px) {
     gap: 30px;
   }
 }

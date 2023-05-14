@@ -7,11 +7,11 @@ export const FeaturedNews = () => {
   const { user } = useUserContext()
 
   return (
-    <div className={styles.container}>
-      <div className={styles.columnist}>
-        <div className={styles.columnistInfo}>
+    <section className={styles.container}>
+      <section className={styles.columnist}>
+        <section className={styles.columnistInfo}>
           {user.isColumnist && (
-            <img className={styles.columnistImage} src="/columnistImage.svg" alt="Foto colunista" />
+            <img className={styles.columnistImage} src="/columnistImage.svg" alt="Foto do colunista" />
           )}
 
           <div>
@@ -19,36 +19,39 @@ export const FeaturedNews = () => {
               <div className={styles.columnistMode}>
                 <span className={roboto.className}>Colunista</span>
 
-                <h3 className={roboto.className}>Tamaki Ryushi</h3>
+                <address className={roboto.className}>Tamaki Ryushi</address>
               </div>
             ) : (
-              <h3 className={roboto.className}>Tamaki Ryushi</h3>
+              <address className={roboto.className}>Tamaki Ryushi</address>
             )}
 
             <div className={styles.postDate}>
               <img src="/clock.svg" alt="Icone relógio" />
-              <span className={roboto.className}>02/02/2021 08:22</span>
+
+              <time dateTime="2021-02-02T08:22" className={roboto.className}>
+                02/02/2021 08:22
+              </time>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.socialMedia}>
+        <aside className={styles.socialMedia}>
           <div>
             <span className={roboto.className}>Compartilhe</span>
 
             <SocialMedias />
           </div>
 
-          <button className={roboto.className}>
+          <button title="Direcionar integração com Google News" className={roboto.className}>
             Siga no <img src="/google-news.svg" alt="Google news" />
           </button>
-        </div>
-      </div>
+        </aside>
+      </section>
 
-      <div className={styles.header}>
-        <img src="/featuredNews.svg" alt="Bacurau image" />
+      <figure className={styles.header}>
+        <img src="/featuredNews.svg" alt="Imagem do filme Bacurau" />
 
-        <div>
+        <figcaption>
           <img src="/camera.svg" alt="Imagem câmera" />
 
           <div>
@@ -57,13 +60,13 @@ export const FeaturedNews = () => {
               repercussão
             </p>
 
-            <span>{'(foto: Divulgação)'}</span>
+            <small className={roboto.className}>{'(foto: Divulgação)'}</small>
           </div>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
-      <div className={styles.audio}>
-        <button>
+      <section className={styles.audio}>
+        <button title="Iniciar áudio">
           <img src="/play.svg" alt="Ícone iniciar som" />
         </button>
 
@@ -72,9 +75,9 @@ export const FeaturedNews = () => {
         <span className={roboto.className}>11 minutos</span>
 
         <img src="/sound.svg" alt="Ícone demonstração som" />
-      </div>
+      </section>
 
-      <div className={`${styles.article} ${merriweather.className}`}>
+      <article className={`${styles.article} ${merriweather.className}`}>
         <p>
           A notícia de que o filme Bacurau (2019), dirigido por Kleber Mendonça Filho e Juliano Dornelles,
           voltou a ser elegível para concorrer ao Oscar 2021 tem causado grande repercussão nas redes e na
@@ -84,7 +87,7 @@ export const FeaturedNews = () => {
           lista final dos filmes selecionados será divulgada em 15 de fevereiro. O filme poderá concorrer às
           principais categorias, exceto Melhor Filme Estrangeiro.
         </p>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }

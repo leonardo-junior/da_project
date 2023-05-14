@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const Comments = () => {
   return (
-    <footer className={`${styles.container} ${roboto.className}`}>
+    <section className={`${styles.container} ${roboto.className}`}>
       <div className={styles.share}>
         <p>Compartilhe</p>
 
@@ -16,9 +16,16 @@ export const Comments = () => {
         <button>LEIA 100 COMENTÁRIOS</button>
 
         <p>
-          * Para comentar, faça seu <Link href="/">login</Link> ou <Link href="/">assine</Link>
+          * Para comentar, faça seu{' '}
+          <Link href="/" aria-label="Direciona área login">
+            login
+          </Link>{' '}
+          ou{' '}
+          <Link href="/" aria-label="Direciona área de assinatura">
+            assine
+          </Link>
         </p>
       </div>
-    </footer>
+    </section>
   )
 }

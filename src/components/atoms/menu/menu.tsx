@@ -2,6 +2,7 @@ import { useUserContext } from 'contexts/userContext'
 import styles from './menu.module.scss'
 import { useState } from 'react'
 import { roboto } from '../fonts/fonts'
+import Link from 'next/link'
 
 export const Menu = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -20,7 +21,7 @@ export const Menu = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <section title="Abrir/ fechar menu" className={styles.container}>
       <button onClick={toggleModal}>
         <div>
           <span />
@@ -32,12 +33,32 @@ export const Menu = () => {
       </button>
 
       {isModalOpen && (
-        <div className={styles.menu} onClick={toggleColumnist}>
-          <p className={roboto.className}>{user.isColumnist ? 'Sair' : 'Logar'}</p>
-        </div>
+        <nav className={styles.menu}>
+          <Link
+            href="/"
+            className={roboto.className}
+            onClick={toggleModal}
+            aria-label="Direcionar página principal"
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/"
+            className={roboto.className}
+            onClick={toggleModal}
+            aria-label="Direcionar página de notícias"
+          >
+            Notícias
+          </Link>
+
+          <p className={roboto.className} onClick={toggleColumnist}>
+            {user.isColumnist ? 'Sair' : 'Logar'}
+          </p>
+        </nav>
       )}
 
       {isModalOpen && <div className={styles.overlay} onClick={() => setIsModalOpen(false)} />}
-    </div>
+    </section>
   )
 }

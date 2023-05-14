@@ -8,46 +8,51 @@ export const ReadMore = () => {
       date: '08:57 - 10/06/2020',
       title: 'Oscar 2022: premiação ganha nova data para o próximo ano',
       src: '/readMore1.svg',
+      dateTime: '2020-06-10T08:57',
     },
     {
       id: 2,
       date: '08:57 - 10/06/2020',
       title: 'O novo trailer de Eternos é tudo o que você precisava para entrar no hype da Marvel',
       src: '/readMore2.svg',
+      dateTime: '2020-06-10T08:57',
     },
     {
       id: 3,
       date: '08:57 - 10/06/2020',
       title: 'Netflix fecha parceria com a Amblin, produtora de Steven Spielberg',
       src: '/readMore3.svg',
+      dateTime: '2020-06-10T08:57',
     },
   ]
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <span className={styles.line} />
 
       <div className={styles.content}>
         <h2 className={merriweather.className}>Leia mais</h2>
 
-        <div className={styles.news}>
+        <ul className={styles.news}>
           {readMore.map((read) => {
             return (
-              <div key={read.id}>
-                <img src={read.src} alt="Imagem" />
+              <li key={read.id}>
+                <img src={read.src} alt="Imagem notícia" />
 
                 <div>
-                  <span className={roboto.className}>{read.date}</span>
+                  <time dateTime={read.dateTime} className={roboto.className}>
+                    {read.date}
+                  </time>
 
                   <p className={merriweather.className}>{read.title}</p>
                 </div>
-              </div>
+              </li>
             )
           })}
-        </div>
+        </ul>
       </div>
 
       <span className={styles.line} />
-    </div>
+    </section>
   )
 }

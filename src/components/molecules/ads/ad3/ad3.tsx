@@ -1,12 +1,17 @@
 import { roboto } from 'components/atoms/fonts/fonts'
 import styles from './ad3.module.scss'
+import Link from 'next/link'
 
 export const Ad3 = () => {
   return (
-    <ins className={styles.container} aria-label="Anúncio" role="complementary">
-      <span className={roboto.className}>Publicidade</span>
+    <nav>
+      <Link href="/" aria-label="Direciona produto do anunciante">
+        <ins className={styles.container} aria-label="Anúncio" role="complementary">
+          <span className={roboto.className}>Publicidade</span>
 
-      <img src="/ad3.svg" alt="Anúncio" aria-label="Anúncio de produto" />
-    </ins>
+          <img src="/ad3.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+        </ins>
+      </Link>
+    </nav>
   )
 }

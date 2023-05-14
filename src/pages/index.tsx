@@ -11,9 +11,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{ minHeight: '100vh' }}>
-        <Home />
-      </main>
+      <Home />
     </>
   )
 }

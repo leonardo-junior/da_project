@@ -3,18 +3,24 @@ import styles from './socialMedias.module.scss'
 
 export const SocialMedias = () => {
   return (
-    <div className={styles.container}>
-      <Link href="/">
-        <img src="/facebook.svg" />
-      </Link>
+    <ul className={styles.container}>
+      <li>
+        <Link href="/" aria-label="Compartilhar no Facebook">
+          <img src="/facebook.svg" alt="Imagem logo Facebook" />
+        </Link>
+      </li>
 
-      <Link href="/">
-        <img src="/twitter.svg" />
-      </Link>
+      <li>
+        <Link href="/" aria-label="Compartilhar no Twitter">
+          <img src="/twitter.svg" alt="Imagem logo Twitter" />
+        </Link>
+      </li>
 
-      <Link href="/">
-        <img src="/whatsapp.svg" />
-      </Link>
-    </div>
+      <li>
+        <Link href="/" aria-label="Compartilhar no WhatsApp">
+          <img src="/whatsapp.svg" alt="Imagem logo WhatsApp" />
+        </Link>
+      </li>
+    </ul>
   )
 }

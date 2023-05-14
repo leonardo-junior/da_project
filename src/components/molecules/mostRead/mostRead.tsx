@@ -8,50 +8,55 @@ export const MostRead = () => {
       date: '10:54 - 25/07/2019',
       rated: true,
       text: 'Mulher anuncia faxina em troca de refeição em BH e se surpreende com respostas',
+      dateTime: '2019-07-25T10:54',
     },
     {
       id: 2,
       date: '10:54 - 25/07/2019',
       rated: false,
       text: "'Um dos mais perigosos', diz delegado sobre homem que atirou em família de PM",
+      dateTime: '2019-07-25T10:54',
     },
     {
       id: 3,
       date: '10:54 - 25/07/2019',
       rated: false,
       text: 'Abastecimento de água será interrompido em BH no domingo; veja a lista dos bairros',
+      dateTime: '2019-07-25T10:54',
     },
     {
       id: 4,
       date: '10:54 - 25/07/2019',
       rated: true,
       text: 'Morre herdeiro da construtora OAS que infartou durante audiência na Justiça',
+      dateTime: '2019-07-25T10:54',
     },
     {
       id: 5,
       date: '10:54 - 25/07/2019',
       rated: false,
       text: 'Preso diz que deu acesso a dados hackeados ao editor do Intercept Brasil',
+      dateTime: '2019-07-25T10:54',
     },
   ]
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2 className={merriweather.className}>MAIS LIDAS</h2>
 
-      <div>
-        {mostRead.map((item) => (
-          <div key={item.id} className={styles.item}>
-            <span className={roboto.className}>{item.date}</span>
+      <ul>
+        {mostRead.map((matter) => (
+          <li key={matter.id} className={styles.item}>
+            <time dateTime={matter.dateTime} className={roboto.className}>
+              {matter.date}
+            </time>
 
-            <article>
-              <p className={merriweather.className}>
-                {item.rated && <img src="/rated.svg" alt="ícone de coroa" />} {item.text}
-              </p>
-            </article>
-          </div>
+            <p className={merriweather.className}>
+              {matter.rated && <img src="/rated.svg" alt="ícone de coroa" />} {matter.text}
+            </p>
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+    </section>
   )
 }

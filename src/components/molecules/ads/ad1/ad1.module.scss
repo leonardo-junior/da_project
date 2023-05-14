@@ -1,5 +1,12 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   padding: 15px 0 ;
+
+  img {
+    max-width: 400px;
+  }
 
   span {
     font-size: 14px;

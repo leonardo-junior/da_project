@@ -5,7 +5,7 @@ import { Ad1 } from '../ads/ad1/ad1'
 
 export const FeaturedNewsHeader = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <nav>
         <Ad1 />
       </nav>
@@ -20,6 +20,6 @@ export const FeaturedNewsHeader = () => {
         Após dois anos, longa voltou a ser elegível para concorrer ao Oscar 2021 e causou grande repercussão
         nas redes e na imprensa nacional e internacional
       </p>
-    </div>
+    </section>
   )
 }

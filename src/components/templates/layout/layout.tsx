@@ -14,7 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
 
       <Breadcrumbs />
 
-      <main className={styles.main}>{children}</main>
+      {children}
     </div>
   )
 }

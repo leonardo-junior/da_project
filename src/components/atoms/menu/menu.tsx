@@ -21,8 +21,8 @@ export const Menu = () => {
   }
 
   return (
-    <section title="Abrir/ fechar menu" className={styles.container}>
-      <button onClick={toggleModal}>
+    <section className={styles.container}>
+      <button title="Abrir/ fechar menu" onClick={toggleModal}>
         <div>
           <span />
           <span />

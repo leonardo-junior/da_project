@@ -1,20 +1,21 @@
 import { merriweather, roboto } from 'components/atoms/fonts/fonts'
 import { SocialMedias } from '../socialMedias/socialMedias'
 import styles from './featuredNews.module.scss'
+import { useUserContext } from 'contexts/userContext'
 
 export const FeaturedNews = () => {
-  const isColumnist = true
+  const { user } = useUserContext()
 
   return (
     <div className={styles.container}>
       <div className={styles.columnist}>
         <div className={styles.columnistInfo}>
-          {isColumnist && (
+          {user.isColumnist && (
             <img className={styles.columnistImage} src="/columnistImage.svg" alt="Foto colunista" />
           )}
 
           <div>
-            {isColumnist ? (
+            {user.isColumnist ? (
               <div className={styles.columnistMode}>
                 <span className={roboto.className}>Colunista</span>
 

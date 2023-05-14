@@ -1,15 +1,39 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 7px;
+  position: relative;
+
+  button {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 7px;
+    border: 1px solid #ECECEC;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+
+    span {
+      height: 4px;
+      width: 20px;
+      background-color: #191919;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top:42px;
   border: 1px solid #ECECEC;
   background-color: #FAFAFA;
   border-radius: 4px;
+  left: 0;
+  width: 75px;
+  padding: 10px;
+  z-index: 1;
+}
 
-  span {
-    height: 4px;
-    width: 20px;
-    background-color: #191919;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }

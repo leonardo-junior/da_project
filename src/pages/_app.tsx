@@ -1,6 +1,11 @@
-import 'styles/globals.scss'
+import { UserContextProvider } from 'contexts/userContext'
 import type { AppProps } from 'next/app'
+import 'styles/globals.scss'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <UserContextProvider>
+      <Component {...pageProps} />
+    </UserContextProvider>
+  )
 }

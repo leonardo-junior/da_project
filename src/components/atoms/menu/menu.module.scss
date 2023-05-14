@@ -1,19 +1,44 @@
 .container {
+  display: flex;
+  align-items: center;
   position: relative;
 
   button {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
     padding: 7px;
+    gap: 14px;
     border: 1px solid #ECECEC;
     background-color: #FAFAFA;
     border-radius: 4px;
 
+   div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
     span {
+      align-self: center;
       height: 4px;
       width: 20px;
       background-color: #191919;
+    }
+   }
+
+    > span {
+      display: none;
+    }
+
+    @media screen and (min-width: 767px) {
+      padding: 10px 12px;
+
+      > span {
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
     }
   }
 }

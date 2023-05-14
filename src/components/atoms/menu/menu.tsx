@@ -1,9 +1,9 @@
 import { useUserContext } from 'contexts/userContext'
-import styles from './hamburger.module.scss'
+import styles from './menu.module.scss'
 import { useState } from 'react'
 import { roboto } from '../fonts/fonts'
 
-export const Hamburger = () => {
+export const Menu = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { user, setUser } = useUserContext()
 
@@ -22,9 +22,13 @@ export const Hamburger = () => {
   return (
     <div className={styles.container}>
       <button onClick={toggleModal}>
-        <span />
-        <span />
-        <span />
+        <div>
+          <span />
+          <span />
+          <span />
+        </div>
+
+        <span className={roboto.className}>Seções</span>
       </button>
 
       {isModalOpen && (

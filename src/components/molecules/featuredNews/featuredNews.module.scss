@@ -184,6 +184,9 @@
 }
 
 .mobileImage {
+  width: 300;
+  height: 169px;
+
   @media screen and (min-width: 1365px) {
     display: none;
   }
@@ -194,6 +197,8 @@
 
   @media screen and (min-width: 1365px) {
     display: block;
+    width: 765px;
+    height: 430px;
   }
 }
 

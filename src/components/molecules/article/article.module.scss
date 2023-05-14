@@ -19,4 +19,20 @@
     text-align: left;
     color: #333333;
   }
+
+  @media screen and (min-width: 767px) {
+    padding: 0 20px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1365px) {
+    padding: 0;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
 }

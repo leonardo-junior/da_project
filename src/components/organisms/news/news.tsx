@@ -6,6 +6,11 @@ import { FeaturedNewsHeader } from 'components/molecules/featuredNewsHeader/feat
 import { FeaturedNews } from 'components/molecules/featuredNews/featuredNews'
 import { Article } from 'components/molecules/article/article'
 import { ReadMore } from 'components/molecules/readMore/readMore'
+import { Comments } from 'components/molecules/comments/comments'
+import { Ad3 } from 'components/molecules/ads/ad3/ad3'
+import { Ad4 } from 'components/molecules/ads/ad4/ad4'
+import { Ad5 } from 'components/molecules/ads/ad5/ad5'
+import { MostRead } from 'components/molecules/mostRead/mostRead'
 
 export const News = () => {
   const news1 = {
@@ -22,19 +27,35 @@ export const News = () => {
     <div className={styles.container}>
       <FeaturedNewsHeader />
 
-      <FeaturedNews />
+      <Ad3 />
 
-      <ReadMore />
+      <div className={styles.content}>
+        <section className={styles.news}>
+          <FeaturedNews />
 
-      <Article title={news1.title} text={news1.text} />
+          <ReadMore />
 
-      <Ad2 />
+          <Article title={news1.title} text={news1.text} />
 
-      <Article title={news2.title} text={news2.text} />
+          <Ad2 />
 
-      <Follow />
+          <Article title={news2.title} text={news2.text} />
 
-      <Newsletter />
+          <Follow />
+
+          <Newsletter />
+
+          <Comments />
+        </section>
+
+        <aside className={styles.rightSide}>
+          <Ad4 />
+
+          <MostRead />
+
+          <Ad5 />
+        </aside>
+      </div>
     </div>
   )
 }

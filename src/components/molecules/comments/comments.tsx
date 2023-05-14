@@ -1,9 +1,9 @@
 import { SocialMedias } from 'components/molecules/socialMedias/socialMedias'
-import styles from './footer.module.scss'
+import styles from './comments.module.scss'
 import { roboto } from 'components/atoms/fonts/fonts'
 import Link from 'next/link'
 
-export const Footer = () => {
+export const Comments = () => {
   return (
     <footer className={`${styles.container} ${roboto.className}`}>
       <div className={styles.share}>

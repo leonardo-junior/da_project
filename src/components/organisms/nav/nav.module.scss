@@ -17,6 +17,10 @@
   background: rgba(0, 0, 0, 0.0001);
 
   @media screen and (min-width: 767px) {
+    padding: 8px 16px;
+  }
+
+  @media screen and (min-width: 1365px) {
     gap: 20px;
   }
 }
@@ -33,7 +37,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     justify-content: flex-start;
 
     > p {
@@ -51,7 +55,7 @@
 .search {
   display: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     display: block;
     padding: 10px;
     border: 1px solid #ECECEC;
@@ -69,7 +73,7 @@
 .logo {
   height: 20px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     height: 25px;
   }
 }
@@ -86,7 +90,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     img {
       display: block;
     }
@@ -110,7 +114,7 @@
   border-radius: 4px;
   border: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     padding: 12px 12px;
     height: 100%;
   }
@@ -119,7 +123,7 @@
 .whatsButton {
   display: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1365px) {
     padding: 10px;
     display: block;
     border-radius: 50%;

@@ -1,7 +1,7 @@
-import { Footer } from 'components/organisms/footer/footer'
 import { Nav } from 'components/organisms/nav/nav'
 
 import styles from './layout.module.scss'
+import { Breadcrumbs } from 'components/molecules/breadcrumbs/breadcrumbs'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -12,9 +12,9 @@ export const Layout = ({ children }: LayoutProps) => {
     <div className={styles.container}>
       <Nav />
 
-      <main className={styles.main}>{children}</main>
+      <Breadcrumbs />
 
-      <Footer />
+      <main className={styles.main}>{children}</main>
     </div>
   )
 }

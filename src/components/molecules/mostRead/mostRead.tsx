@@ -1,5 +1,6 @@
 import { merriweather, roboto } from 'components/atoms/fonts/fonts'
 import styles from './mostRead.module.scss'
+import Link from 'next/link'
 
 export const MostRead = () => {
   const mostRead = [
@@ -47,13 +48,15 @@ export const MostRead = () => {
       <ul>
         {mostRead.map((matter) => (
           <li key={matter.id} className={styles.item}>
-            <time dateTime={matter.dateTime} className={roboto.className}>
-              {matter.date}
-            </time>
+            <Link href="/">
+              <time dateTime={matter.dateTime} className={roboto.className}>
+                {matter.date}
+              </time>
 
-            <p className={merriweather.className}>
-              {matter.rated && <img src="/rated.svg" alt="ícone de coroa" />} {matter.text}
-            </p>
+              <p className={merriweather.className}>
+                {matter.rated && <img src="/rated.svg" alt="ícone de coroa" />} {matter.text}
+              </p>
+            </Link>
           </li>
         ))}
       </ul>

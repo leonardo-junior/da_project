@@ -124,6 +124,10 @@
         height: 15px;
         width: 81px;
       }
+
+      @media (pointer: fine) {
+        cursor: pointer;
+      }
     }
 
     @media screen and (min-width: 767px) {
@@ -215,6 +219,9 @@
     height: 34px;
     width: 34px;
 
+    @media (pointer: fine) {
+      cursor: pointer;
+    }
   }
 
   span {

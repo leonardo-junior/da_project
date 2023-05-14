@@ -1,5 +1,6 @@
 import { merriweather, roboto } from 'components/atoms/fonts/fonts'
 import styles from './readMore.module.scss'
+import Link from 'next/link'
 
 export const ReadMore = () => {
   const readMore = [
@@ -37,15 +38,17 @@ export const ReadMore = () => {
           {readMore.map((read) => {
             return (
               <li key={read.id}>
-                <img src={read.src} alt="Imagem notícia" />
+                <Link href="/">
+                  <img src={read.src} alt="Imagem notícia" />
 
-                <div>
-                  <time dateTime={read.dateTime} className={roboto.className}>
-                    {read.date}
-                  </time>
+                  <div>
+                    <time dateTime={read.dateTime} className={roboto.className}>
+                      {read.date}
+                    </time>
 
-                  <p className={merriweather.className}>{read.title}</p>
-                </div>
+                    <p className={merriweather.className}>{read.title}</p>
+                  </div>
+                </Link>
               </li>
             )
           })}

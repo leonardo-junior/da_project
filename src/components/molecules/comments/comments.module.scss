@@ -61,4 +61,10 @@
     color: #004071;
     text-decoration: underline;
   }
+
+  button {
+    @media (pointer: fine) {
+      cursor: pointer;
+    }
+  }
 }

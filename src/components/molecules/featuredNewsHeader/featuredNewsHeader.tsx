@@ -6,9 +6,7 @@ import { Ad1 } from '../ads/ad1/ad1'
 export const FeaturedNewsHeader = () => {
   return (
     <section className={styles.container}>
-      <nav>
-        <Ad1 />
-      </nav>
+      <Ad1 />
 
       <span className={roboto.className}>Oscar 2021</span>
 

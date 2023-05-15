@@ -10,7 +10,13 @@ export const Ad5 = () => {
         <ins className={styles.container} aria-label="Anúncio" role="complementary">
           <span className={roboto.className}>Publicidade</span>
 
-          <Image width={300} height={600} src="/ads/ad5.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+          <Image
+            width={300}
+            height={600}
+            src="https://i.imgur.com/8VEImFp.png"
+            alt="Anúncio"
+            aria-label="Anúncio de produto"
+          />
         </ins>
       </Link>
     </nav>

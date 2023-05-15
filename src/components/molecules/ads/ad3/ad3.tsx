@@ -10,7 +10,13 @@ export const Ad3 = () => {
         <ins className={styles.container} aria-label="Anúncio" role="complementary">
           <span className={roboto.className}>Publicidade</span>
 
-          <Image width={970} height={250} src="/ads/ad3.svg" alt="Anúncio" aria-label="Anúncio de produto" />
+          <Image
+            width={970}
+            height={250}
+            src="https://i.imgur.com/S0ARiEc.png"
+            alt="Anúncio"
+            aria-label="Anúncio de produto"
+          />
         </ins>
       </Link>
     </nav>

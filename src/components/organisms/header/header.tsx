@@ -41,7 +41,7 @@ export const Header = () => {
 
           <span />
 
-          <img src="user-image.svg" alt="Imagem de perfil do usuário" />
+          <img src="https://i.imgur.com/b8PImfS.png" alt="Imagem de perfil do usuário" />
         </section>
       </div>
     </header>

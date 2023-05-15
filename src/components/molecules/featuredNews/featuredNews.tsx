@@ -11,7 +11,11 @@ export const FeaturedNews = () => {
       <section className={styles.columnist}>
         <section className={styles.columnistInfo}>
           {user.isColumnist && (
-            <img className={styles.columnistImage} src="/columnistImage.svg" alt="Foto do colunista" />
+            <img
+              className={styles.columnistImage}
+              src="https://i.imgur.com/oaiI5fm.png"
+              alt="Foto do colunista"
+            />
           )}
 
           <div>
@@ -49,7 +53,7 @@ export const FeaturedNews = () => {
       </section>
 
       <figure className={styles.header}>
-        <img src="/featuredNews.svg" alt="Imagem do filme Bacurau" />
+        <img src="https://i.imgur.com/NLadKFQ.png" alt="Imagem do filme Bacurau" />
 
         <figcaption>
           <img src="/camera.svg" alt="Imagem câmera" />

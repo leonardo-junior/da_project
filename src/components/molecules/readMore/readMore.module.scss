@@ -46,6 +46,17 @@
     display: flex;
     gap: 10px;
 
+    a {
+      display: flex;
+      gap: 10px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
     div {
       display: flex;
       flex-direction: column;
@@ -80,17 +91,21 @@
       height: 100%;
       max-width: 325px;
 
+      a {
+        flex-direction: column;
+        gap: 5px;
+      }
+
       img {
         width: 235px;
-        max-height: 132px;
-        aspect-ratio: 16/9;
+        height: 132px;
         object-fit: cover;
       }
 
       div {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 5px;
       }
     }
   }

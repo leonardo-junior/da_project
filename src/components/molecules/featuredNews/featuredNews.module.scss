@@ -79,6 +79,11 @@
     gap: 5px;
     align-items: center;
 
+    img {
+      height: 24px;
+      width: 24px;
+    }
+
     time {
       font-size: 12px;
       font-weight: 400;
@@ -163,6 +168,8 @@
     gap: 10px;
 
     img {
+      width: 20px;
+      height: 18px;
       margin-bottom: auto;
     }
 
@@ -192,23 +199,6 @@
   }
 }
 
-.mobileImage {
-
-  @media screen and (min-width: 1365px) {
-    display: none;
-  }
-}
-
-.desktopImage {
-  display: none;
-
-  @media screen and (min-width: 1365px) {
-    display: block;
-    width: 765px;
-    height: 430px;
-  }
-}
-
 .audio {
   display: flex;
   align-items: center;
@@ -218,11 +208,21 @@
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
 
+  > img {
+    height: 31px;
+    width: 39px;
+  }
+
   button {
     border: none;
     background: none;
-    height: 34px;
-    width: 34px;
+    height: 35px;
+    width: 35px;
+
+    img {
+      height: 35px;
+      width: 35px;
+    }
 
     @media (pointer: fine) {
       cursor: pointer;
